@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olimpíadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Nacional - Anos 80 e 90</h1>
+    </header>
+    <main>
+        <section>        
+            <input type="text" name="busca" placeholder="Digite o nome da banda" id="campo-pesquisa">
+            <button onclick="pesquisar()" >Pesquisar</button>
+    </section>
+
+        <section class="resultados-pesquisa"
+            id="resultados-pesquisa">
+            <!--
+          <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Legi%C3%A3o_Urbana" target="_blank">Legião Urbana</a>
+                </h2>
+                <p class="discricao-meta">Formada em Brasília em 1982 por Renato Russo (voz, guitarra), 
+                    Renato Rocha (guitarra), Dado Villa-Lobos (guitarra) e Marcelo Bonfá (bateria), 
+                    a Legião Urbana revolucionou o rock brasileiro com letras poéticas e melodias marcantes. 
+                    A banda lançou 10 álbuns de estúdio entre 1983 e 1996, vendendo mais de 15 milhões de cópias no Brasil. 
+                    Hits como "Índia", "Tempo Perdido" e "Eduardo e Mônica" se tornaram verdadeiros hinos de uma geração. 
+                    Com a morte de Renato Russo em 1996, a banda encerrou suas atividades.</p>
+                <a href="https://www.letras.mus.br/legiao-urbana/" target="_blank">Mais informações</a>
+            </div> 
+        
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Tit%C3A3s" target="_blank">Titãs</a>
+                </h2>
+                <p class="discricao-meta">Formada em São Paulo em 1982, a banda Titãs se destacou por sua versatilidade musical, 
+                    abordando temas sociais e políticos em suas letras. Com uma discografia extensa, a banda lançou mais de 20 álbuns de estúdio, 
+                    vendendo milhões de cópias. Hits como "Epitáfio", "Go Back" e "Sonífera Ilha" marcaram gerações. 
+                    A formação original da banda passou por diversas mudanças ao longo dos anos, com nomes como Branco Mello, Arnaldo Antunes, 
+                    Sérgio Britto, Charles Gavin, Nando Reis e Ciro Pessoa se revezando nos vocais e instrumentos. 
+                    Atualmente, a banda continua em atividade, adaptando seu som aos novos tempos e mantendo sua relevância
+                    na cena musical brasileira.</p>
+                <a href="https://www.letras.mus.br/titas/" target="_blank">Mais informações</a>
+            </div>
+    
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Os_Paralamas_do_Sucesso" target="_blank">Paralamas do Sucesso</a>
+                </h2>
+                <p class="discricao-meta">Formada no Rio de Janeiro em 1980, a banda Paralamas do Sucesso se tornou um dos maiores nomes 
+                    do rock brasileiro. Com um som característico que mescla rock, reggae e pop, a banda conquistou o público com hits como 
+                    "Alagados", "Meu Erro" e "O Beijo". A formação clássica, composta por Herbert Vianna (voz, guitarra), Bi Ribeiro (baixo) e 
+                    João Barone (bateria), permaneceu unida por muitos anos, consolidando a banda como um dos maiores ícones da música brasileira.</p>
+                <a href="https://www.letras.mus.br/paralamas-do-sucesso/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Bar%C3%A3o_Vermelho" target="_blank">Barão Vermelho</a>
+                </h2>
+                <p class="discricao-meta">Uma das bandas mais importantes do rock brasileiro, o Barão Vermelho foi liderado por Cazuza, 
+                    um dos maiores poetas da música popular brasileira. Com hits como "Pro Dia Nascer Feliz" e "I Wanna Be Your Man", 
+                    a banda marcou época com suas letras fortes e melodias envolventes. Após a morte de Cazuza, a banda continuou 
+                    sua trajetória com outros vocalistas, mas nunca mais alcançou o mesmo sucesso da época de ouro.</p>
+                <a href="https://www.letras.mus.br/barao-vermelho/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Ultraje_a_Rigor" target="_blank">Ultraje a Rigor</a>
+                </h2>
+                <p class="discricao-meta">Pioneiros do rock nacional, o Ultraje a Rigor se destacou por seu som cru e irreverente. 
+                Com hits como "Inútil" e "Nós Vamos Invadir Sua Praia", a banda marcou uma geração com suas letras irreverentes 
+                e performances energéticas. Apesar das diversas mudanças na formação, o Ultraje a Rigor continua em atividade,
+                 levando seu rock'n'roll autêntico para os palcos.</p>
+                <a href="https://www.letras.mus.br/ultraje-a-rigor/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/RPM_(banda)" target="_blank">RPM</a>
+                </h2>
+                <p class="discricao-meta">Uma das bandas de maior sucesso comercial dos anos 80, 
+                    o RPM conquistou o público com suas canções pop rock e melodias cativantes.
+                     Hits como "Geração Coca-Cola" e "Louras Geladas" se tornaram verdadeiros hinos da época. 
+                     A banda se dissolveu no final dos anos 80, mas voltou a se reunir em diversas ocasiões, 
+                     mantendo viva a memória de uma época marcada pela leveza e o romantismo.</p>
+                <a href="https://www.letras.mus.br/rpm/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Raimundos" target="_blank">Raimundos</a>
+                </h2>
+                <p class="discricao-meta">Os Raimundos revolucionaram o rock brasileiro nos anos 90 com seu som 
+                    cru e letras irreverentes. Com hits como "Hey, Na Na Na" e "Mulher de Fases", a banda misturou elementos do punk rock, 
+                    hardcore e música brasileira, criando um estilo único e marcante. A banda, liderada por Rodolfo Abrantes, 
+                    marcou época com suas letras que abordavam temas do cotidiano e da juventude.</p>
+                <a href="https://www.letras.mus.br/raimundos/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Engenheiros_do_Hawaii" target="_blank">Engenheiros do Hawaii</a>
+                </h2>
+                <p class="discricao-meta">Com letras inteligentes e um som que mescla rock, pop e MPB, 
+                                    os Engenheiros do Hawaii se destacaram na cena musical brasileira. Hits como "Uma Vida Só" 
+                                    e "Infinito" marcaram gerações. A banda, liderada por Humberto Gessinger, 
+                                    abordou temas sociais e políticos em suas músicas, contribuindo para a formação 
+                                    da identidade musical brasileira.</p>
+                <a href="https://www.letras.mus.br/engenheiros-do-hawaii/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Skank" target="_blank">Skank</a>
+                </h2>
+                <p class="discricao-meta">Uma das bandas de maior sucesso comercial dos anos 90, 
+                    o Skank conquistou o público com seu pop rock melódico e letras positivas. Hits como "É Uma Partida de Futebol" 
+                    e "Garota de Ipanema" se tornaram verdadeiros hinos. A banda, formada em Belo Horizonte, 
+                    se tornou um dos principais nomes do pop rock brasileiro.</p>
+                <a href="https://www.letras.mus.br/skank/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Charlie_Brown_Jr._(banda)" target="_blank">Charlie Brown Jr.</a>
+                </h2>
+                <p class="discricao-meta">O Charlie Brown Jr. se tornou um fenômeno do rock brasileiro nos anos 2000, 
+                    com um som que mesclava punk rock, reggae e música brasileira. Hits como "Hoje" e "I Gotta Believe" marcaram uma geração. 
+                    A banda, liderada por Chorão, abordava temas como o cotidiano, o amor e a amizade em suas letras, conquistando um público fiel.</p>
+                <a href="https://www.letras.mus.br/charlie-brown-jr/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Sepultura" target="_blank">Sepultura</a>
+                </h2>
+                <p class="discricao-meta">Os pioneiros do metal brasileiro, o Sepultura, ganharam reconhecimento mundial com seu 
+                    som pesado e agressivo. Com álbuns como "Roots" e "Arise", 
+                    a banda misturou elementos do thrash metal com ritmos brasileiros, criando um estilo único e inovador. 
+                    O Sepultura é considerado uma das bandas de metal mais importantes do mundo.</p>
+                <a href="https://www.letras.mus.br/sepultura/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Chico_Science_e_Na%C3%A7%C3%A3o_Zumbi" target="_blank">Chico Science & Nação Zumbi</a>
+                </h2>
+                <p class="discricao-meta">Chico Science & Nação Zumbi revolucionaram a música brasileira com a criação do manguebeat, 
+                    um estilo que mesclava elementos do rock, funk, maracatu e outros ritmos regionais.
+                     Hits como "A Cidade" e "Da Lama ao Caos" marcaram época e influenciaram diversas gerações de músicos. 
+                     A morte precoce de Chico Science em 1997 foi uma grande perda para a música brasileira.</p>
+                <a href="https://www.letras.mus.br/chico-science-e-nacao-zumbi/" target="_blank">Mais informações</a>
+            </div>
+
+            <div class="item-resultado">
+                <h2>
+                    <a href="https://pt.wikipedia.org/wiki/Jota_Quest" target="_blank">Jota Quest</a>
+                </h2>
+                <p class="discricao-meta">Formada em Belo Horizonte em 1993, a banda Jota Quest se tornou um dos maiores nomes 
+                    do pop rock brasileiro. Com hits como "Fácil", "Dias Melhores" e "Na Moral", 
+                    a banda conquistou o público com suas letras positivas e melodias cativantes. O Jota Quest 
+                    é conhecido por sua versatilidade musical, mesclando elementos do pop, rock, funk e até mesmo eletrônica.
+                    A banda possui uma legião de fãs e continua em atividade, lançando novos álbuns e realizando shows por todo o Brasil.</p>
+                <a href="https://www.jotaquest.com.br/" target="_blank">Mais informações</a>
+            </div> 
+            
+        -->
+    
+    </section>
+    </main>
+
+    <footer>
+        <p>2024 Bandas dos anos 80 e 90.  Todos os direitos reservados</p>
+        <p>Entre em contato pelo emai: emerson-maga@hotmail.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
